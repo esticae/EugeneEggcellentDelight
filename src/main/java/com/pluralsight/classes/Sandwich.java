@@ -1,10 +1,14 @@
 package com.pluralsight.classes;
 
+import com.pluralsight.Interface.Ipay;
+
 import java.util.List;
+import java.util.Scanner;
 
 public class Sandwich implements Ipay {
     private String size;
     private String bread;
+    private List<String> regulrToppings;
     private List<String> meats;
     private List<String> cheeses;
     private List<String> sauces;
@@ -21,7 +25,30 @@ public class Sandwich implements Ipay {
         this.price = price;
     }
 
+    Scanner scan = new Scanner(System.in);
+
     public Sandwich() {
+        System.out.println("Welcome To EED");
+        System.out.println("What size do you want your sandwich?");
+        System.out.println("4\" for 5.50$| 8\" for 7.00$| 12\" for 8.50$| ");
+        String size = scan.next();
+        double price = 0.0;
+        switch (size) {
+            case "4":
+                price = 5.50;
+                break;
+            case "8":
+                price = 7.00;
+                break;
+            case "12":
+                price = 8.50;
+                break;
+            default:
+                System.out.println("Errror wrong size");
+
+
+        }
+
 
     }
 

@@ -3,8 +3,12 @@ package com.pluralsight.classes;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RegualrToppings {
+public class RegualrToppings extends Toppings {
     private List<String> toppings;
+
+    public RegualrToppings(String meats, int size, double price) {
+        super(meats, size, price);
+    }
 
     public void NewToppings() {
         toppings = new ArrayList<>();
@@ -36,5 +40,9 @@ public class RegualrToppings {
         this.toppings = toppings;
     }
 
+    @Override
+    void Top() {
+
+    }
 }
 

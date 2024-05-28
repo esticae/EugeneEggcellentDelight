@@ -1,29 +1,49 @@
 package com.pluralsight.classes;
 
-public class Drink implements Ipay{
-    private int size;
-    private String flavor;
+import com.pluralsight.Interface.Ipay;
 
-    public Drink(int size, String flavor) {
-        this.size = size;
-        this.flavor = flavor;
+import java.util.Scanner;
+
+public class Drink implements Ipay {
+    private String name;
+    private double price;
+
+    public Drink(String name, double price) {
+        this.name = "";
+        this.price = 0;
     }
 
-    public int getSize() {
-        return size;
+    public Drink(){
+        System.out.println("what kind of drink you want? ");
+        System.out.print("We have either coke or pepsi");
+        System.out.println();
+        Scanner scan = new Scanner(System.in);
+
+        String name = scan.nextLine().trim();
+        System.out.println("whats the price");
+        double price = scan.nextDouble();
+
+        Drink drink = new Drink(name, price);
+
+
     }
 
-    public void setSize(int size) {
-        this.size = size;
+    public String getName() {
+        return name;
     }
 
-    public String getFlavor() {
-        return flavor;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setFlavor(String flavor) {
-        this.flavor = flavor;
+    public double getPrice() {
+        return price;
     }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
 
     @Override
     public void pay() {

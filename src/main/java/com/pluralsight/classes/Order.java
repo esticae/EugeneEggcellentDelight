@@ -1,4 +1,4 @@
 package com.pluralsight.classes;
 
-public class PremiumToppings {
+public class Order {
 }
