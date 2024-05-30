@@ -2,8 +2,11 @@ package com.pluralsight.classes;
 
 import java.util.Scanner;
 
+import static com.pluralsight.classes.Sandwich.addSandwich;
+
 public class HomeScreen {
     Scanner scan = new Scanner(System.in);
+    private java.util.Scanner Scanner;
 
     public void display() {
         boolean running = true;
@@ -43,6 +46,7 @@ public class HomeScreen {
                 System.out.println("Choose an option");
                 int input1 = scan.nextInt();
 
+
                 switch (input1) {
                     case 1:
                          addSandwich();
@@ -65,9 +69,69 @@ public class HomeScreen {
                 }
             }
 
-    private void addSandwich() {
+    /*private void addSandwich() {
+        boolean running = true;
+        while (running){
+            scan.nextLine();
+            System.out.println("please select your Bread: ");
+            System.out.println(
+                    " - white \n" +
+                    " - wheat \n" +
+                    " - rye \n" +
+                    " - wrap");
+            int breadInput = scan.nextInt();
+            String bread;
+            switch (breadInput) {
+                case 1:
+                    bread = "White";
+                    break;
+                case 2:
+                    bread = "Wheat";
+                    break;
+                case 3:
+                    bread = "Rye";
+                    break;
+                case 4:
+                    bread = "Wrap";
+                    break;
+                default:
+                    System.out.println("Error: Invalid bread option.");
+                    return;
+            }
 
-    }
+            System.out.println("Please select your size: ");
+            System.out.println("1) 4\"");
+            System.out.println("2) 8\"");
+            System.out.println("3) 12\"");
+
+            int sizeInput = scan.nextInt();
+            scan.nextLine();
+            String size = "";
+            switch (sizeInput) {
+                case 1:
+                    size = "4\"";
+                    break;
+                case 2:
+                    size = "8\"";
+                    break;
+                case 3:
+                    size = "12\"";
+                    break;
+                default:
+                    System.out.println("Error: Invalid size option.");
+                    return;
+
+            }
+
+            //Sandwich sandwich = new Sandwich(bread,size);
+            //Order.addItem(sandwich);
+
+
+        }
+
+
+
+    }*/
 
 
     private void Cancel() {
