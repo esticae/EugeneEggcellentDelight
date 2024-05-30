@@ -2,6 +2,8 @@ package com.pluralsight.classes;
 
 import java.util.Scanner;
 
+import static com.pluralsight.classes.Chips.addChips;
+import static com.pluralsight.classes.Drink.addDrink;
 import static com.pluralsight.classes.Sandwich.addSandwich;
 
 public class HomeScreen {
@@ -52,10 +54,10 @@ public class HomeScreen {
                          addSandwich();
                         break;
                     case 2:
-                        new Drink();
+                         addDrink();
                         break;
                     case 3:
-                        new Chips();
+                        addChips();
                         break;
                     case 4:
                         CheckOut();

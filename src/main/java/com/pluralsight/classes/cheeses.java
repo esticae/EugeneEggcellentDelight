@@ -19,7 +19,7 @@ public class cheeses extends PremuimToppings {
     }
 
     @Override
-    public double getPrice() {
+    public double getPrice(String size) {
         return switch (size) {
             case "4" -> 0.75;
             case "8" -> 1.50;

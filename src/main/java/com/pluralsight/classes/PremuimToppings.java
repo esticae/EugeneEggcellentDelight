@@ -1,6 +1,6 @@
 package com.pluralsight.classes;
 
-public class PremuimToppings extends Toppings {
+public abstract class PremuimToppings extends Toppings {
     private String name;
     private double price;
 
@@ -12,4 +12,6 @@ public class PremuimToppings extends Toppings {
     void Top() {
 
     }
+
+    public abstract double getPrice(String size);
 }
