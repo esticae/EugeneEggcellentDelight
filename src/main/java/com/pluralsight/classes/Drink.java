@@ -45,16 +45,13 @@ public class Drink implements Ipay {
 
     @Override
     public double getPrice() {
-        return this.price;
-    }
-
-    public String getSize(String size) {
-        switch (this.size.toLowerCase()){
+        switch (size){
             case "small":
-                this.price = 2.0;
-                break;
+            this.price = 2.0;
+            break;
             case "medium":
                 this.price = 2.5;
+                break;
             case "large":
                 this.price = 3.0;
                 break;
@@ -62,10 +59,16 @@ public class Drink implements Ipay {
                 throw new IllegalArgumentException("wrong size");
 
         }
-        return this.size;
+        return this.price;
     }
 
-    public void setSize(String size) {
+    public String getSize() {
+        {
+        }
+        return size;
+    }
+
+    public void setSize() {
         this.size = size;
     }
 }

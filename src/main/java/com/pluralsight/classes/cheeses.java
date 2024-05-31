@@ -2,20 +2,8 @@ package com.pluralsight.classes;
 
 
 public class cheeses extends PremuimToppings {
-    private String size;
-
-
-    public cheeses(String name, double price, String size) {
-        super(name, price);
-        this.size = size;
-    }
-
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
+    public cheeses(String name) {
+        super(name);
     }
 
     @Override
@@ -28,8 +16,6 @@ public class cheeses extends PremuimToppings {
         };
     }
 
-    public static cheeses createCheese(String name, double price, String size) {
-        return new cheeses(name, price, size);
-    }
+
 }
 

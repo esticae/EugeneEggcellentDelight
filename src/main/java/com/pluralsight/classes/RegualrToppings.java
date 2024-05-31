@@ -4,16 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RegualrToppings extends Toppings {
-    private List<String> toppings;
-
-    public RegualrToppings(String name, double price) {
-        super(name, price);
+    public RegualrToppings(String name) {
+        super(name);
     }
 
-
     @Override
-    void Top() {
-
+    public double getPrice(String size) {
+        return 0;
     }
 }
 
