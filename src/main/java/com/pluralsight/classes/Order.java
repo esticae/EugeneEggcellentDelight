@@ -9,8 +9,7 @@ public class Order {
 
 
 
-    public static Order addItem(Drink drink) {
-        return null;
+    public static void addItem(Drink drink) {
     }
 
     public static void addItem(Chips chips) {
