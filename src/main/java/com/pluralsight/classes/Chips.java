@@ -8,19 +8,9 @@ public class Chips implements Ipay {
     private String type;
     private double price;
 
-    public Chips(String type, double price) {
+    public Chips(String type, String price) {
         this.type = type;
         this.price = 1.50;
-    }
-
-    public static Chips addChips() {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("A side of chips is 1.50? is that ok?");
-        System.out.println("We have crispy or potato");
-        String type = scan.nextLine();
-        double price = 1.50;
-        return new Chips(type,price);
-
     }
 
     public String getType() {

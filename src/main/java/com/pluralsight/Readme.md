@@ -9,7 +9,7 @@ The intended users of this application are customers who want to order sandwiche
 Class Diagram
 <img src="&amp;quot;C:\Users\estic\Downloads\Copy of DeliDiagram.jpg&amp;quot;"/>
 ![Copy of DeliDiagram.jpg](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2FDownloads%2FCopy%20of%20DeliDiagram.jpg)
-
+![Copy of DeliDiagram.jpg](Interface%2FCopy%20of%20DeliDiagram.jpg)
 
 User Stories
 List the user stories that guided the development of your application. Format these stories as: "As a [type of user], I want [some goal] so that [some reason]."
@@ -44,9 +44,9 @@ Any additional libraries or frameworks used in the project.
 Demo
 Include screenshots or GIFs that show your application in action. Use tools like Giphy Capture to record a GIF of your application.
 
-Application Screenshot
+Application Screens![Copy of DeliDiagram.jpg](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2FDownloads%2FCopy%20of%20DeliDiagram.jpg)hot
 ![Screenshot 2024-05-31 071123.png](..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202024-05-31%20071123.png)
-
+![img.png](img.png)
 Future Work
 Outline potential future enhancements or functionalities you might consider adding:
 Implementing a payment system to process orders
